@@ -13,7 +13,7 @@ env:
 jobs:
   sbom:
     name: CycloneDX SBOM
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     permissions:
       contents: read
 
@@ -46,7 +46,7 @@ jobs:
 
   analyze:
     name: ${{ matrix.name }}
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     permissions:
       contents: read
     env:
@@ -108,7 +108,7 @@ jobs:
 
   publish:
     name: Publish
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     needs: [sbom, analyze]
     permissions:
       contents: write
