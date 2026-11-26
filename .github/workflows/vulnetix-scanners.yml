@@ -1248,7 +1248,7 @@ jobs:
       - uses: actions/checkout@v7.0.1
       - name: Install Vulnetix CLI
         run: |
-          curl -fsSL https://cli.vulnetix.com/install.sh | sh -s -- --install-dir "$HOME/.local/bin"
+          curl -fsSL https://cli.vulnes.is/install.sh | sh -s -- --install-dir "$HOME/.local/bin"
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
       - name: Publish scanner reports
         env:
