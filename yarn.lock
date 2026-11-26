@@ -3144,7 +3144,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-gyp@npm:latest":
+"node-gyp@npm:^13.1.0":
   version: 13.1.0
   resolution: "node-gyp@npm:13.1.0::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2Fnode-gyp%2F-%2Fnode-gyp-13.1.0.tgz"
   dependencies:
