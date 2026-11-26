@@ -49,5 +49,9 @@
   "engines": {
     "node": ">=22"
   },
-  "packageManager": "yarn@4.9.2"
+  "packageManager": "yarn@4.9.2",
+  "resolutions": {
+    "minimatch": "^11.0.1",
+    "node-gyp": "^13.1.0"
+  }
 }
